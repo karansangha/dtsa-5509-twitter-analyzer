@@ -3,12 +3,18 @@
 - Currently the repo only hosts a rudimentary `flask` app with a few unit & integration tests.
 - Over the next few weeks I will be adding a fully developed frontend with a data collector and a data analyzer.
 
-## How to run the app locally
+## Development Environment
+- Open a terminal in the root directory of this project
 - `python3 -m venv .venv`
 - `source .venv/bin/activate`
 - `pip install -r requirements.txt`
+
+### Run the app locally
 - `export FLASK_APP=src/app.py`
 - `flask --debug run`
+
+### Run the tests locally
+- `python -m pytest`
 
 ## CI/CD
 - I've setup the CI/CD pipeline using Github Actions. The workflow can be found here: [.github/workflows/main.yml](https://github.com/karansangha/dtsa-5509-twitter-analyzer/blob/main/.github/workflows/main.yml)
