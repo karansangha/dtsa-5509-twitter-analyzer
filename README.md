@@ -4,7 +4,7 @@
 - Over the next few weeks I will be adding a fully developed frontend with a data collector and a data analyzer.
 
 ## Development Environment
-- Open a terminal in the root directory of this project
+- Open a new terminal window in the root directory of this project
 - `python3 -m venv .venv`
 - `source .venv/bin/activate`
 - `pip install -r requirements.txt`
