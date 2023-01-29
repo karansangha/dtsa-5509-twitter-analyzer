@@ -1,0 +1,20 @@
+{% block title %}{{ user }}'s Tweets{% endblock %}
+
+{% block content %}
+    <h1>{{ user }}'s Tweets</h1>
+    <ul>
+        {% for tweet in tweets %}
+            <li>{{ tweet.full_text }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block stats %}
+    <h1>Tweet Statistics</h1>
+    <ul>
+        <li>Average tweet length: {{ avg_length }}</li>
+        <li>Average tweet likes: {{ avg_likes }}</li>
+        <li>Average tweet retweets: {{ avg_retweets }}</li>
+    </ul>
+
+{% endblock %}
