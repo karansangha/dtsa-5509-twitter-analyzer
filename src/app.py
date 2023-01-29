@@ -122,3 +122,5 @@ def search():
     avg_retweets = get_average_retweets(tweets)
     return render_template("tweets.html", tweets=tweets, avg_length=avg_length, avg_likes=avg_likes, avg_retweets=avg_retweets)
 
+if __name__ == '__main__':
+    app.run(debug=True)
