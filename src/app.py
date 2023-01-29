@@ -19,3 +19,6 @@ def main():
 def echo_input():
     input_text = request.form.get("user_input", "")
     return "<h1>Thank you for using the form!</h1><p>You entered: " + input_text + "</p>"
+
+if __name__ == '__main__':
+    app.run(debug=True)
