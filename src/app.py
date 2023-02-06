@@ -29,7 +29,7 @@ def authenticate():
     Returns:
         tweepy.API: API object to interact with Twitter.
     """
-    auth = tweepy.OAuthHandler(os.environ.get("TWITTER_CONSUMER_KEY"), os.environ.get("TWITTER_CONSUMER_SECRET"))
+    auth = tweepy.OAuth1UserHandler(os.environ.get("TWITTER_CONSUMER_KEY"), os.environ.get("TWITTER_CONSUMER_SECRET"))
     auth.set_access_token(os.environ.get("TWITTER_ACCESS_TOKEN"), os.environ.get("TWITTER_ACCESS_TOKEN_SECRET"))
     api = tweepy.API(auth)
     return api
